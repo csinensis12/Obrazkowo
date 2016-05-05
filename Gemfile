@@ -10,12 +10,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'byebug'
+  gem 'sqlite3'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'sqlite3'
 end
 
-gem 'pg'
+group :production do
+  gem 'pg', '0.18.2'
+end
