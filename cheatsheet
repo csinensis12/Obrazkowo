@@ -1,0 +1,6 @@
+git add .
+git commit -am "komentarz"
+git push
+git push heroku master
+heroku run rake db:migrate
+rake db:migrate
