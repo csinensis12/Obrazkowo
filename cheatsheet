@@ -4,3 +4,4 @@ git push
 git push heroku master
 heroku run rake db:migrate
 rake db:migrate
+bundle install
